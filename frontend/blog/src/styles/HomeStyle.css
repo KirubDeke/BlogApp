@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.container {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 7%;
+  }
+  
+  .featured-welcome {
+    flex: 1;
+    text-align: left;
+    margin-right: 2rem;
+  }
+
+  .blog-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .blog-description {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+  
+  .featured-image {
+    flex: 1;
+  }
+  
+  .featured-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 8%;
+  }
+  .ms-6{
+    background-color:#7B2CBF;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .ms-6:hover{
+    scale: 1.1;
+    background-color:#7B2CBF;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .ms-6:focus,
+  .ms-6:active {
+    box-shadow: none !important;
+    background-color: #7B2CBF !important;
+    color: #fff !important; 
+  }
+ 
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .featured-welcome {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      margin-top: 30%;
+    }
+  
+    .blog-title {
+      font-size: 2rem;
+    }
+  
+    .blog-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .blog-title {
+      font-size: 2.2rem;
+    }
+  
+    .blog-description {
+      font-size: 1.1rem;
+    }
+  }

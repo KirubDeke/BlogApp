@@ -1,0 +1,28 @@
+
+.recent-posts-description{
+    text-align: center;
+    margin: 5%;
+}
+.btn-primary{
+    background-color:#7B2CBF;
+    color: white;
+    border: none;
+    outline: none;
+  }
+.btn-primary:hover{
+    scale: 1.1;
+    background-color:#7B2CBF;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .btn-primary:focus,
+  .btn-primary:active {
+    box-shadow: none !important;
+    background-color: #7B2CBF !important;
+    color: #fff !important; 
+  }
+ .see-more{
+  margin-top: 7%;
+  margin-right: 5%;
+ }

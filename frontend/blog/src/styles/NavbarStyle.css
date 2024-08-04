@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+.navbar-brand {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+  }
+  .navbar-brand span{
+    color:#7B2CBF;
+  }
+ 
+  .nav-link {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+  .ms-4{
+    background-color:#7B2CBF;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .ms-4:hover{
+    scale: 1.1;
+    background-color:#7B2CBF;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .ms-4:focus,
+  .ms-4:active {
+    box-shadow: none !important;
+    background-color: #7B2CBF !important;
+    color: #fff !important; 
+  }
+ 
