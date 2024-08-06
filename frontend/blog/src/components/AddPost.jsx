@@ -18,7 +18,7 @@ const AddNewPost = () => {
     // Fetch existing posts from the backend
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:7700/api/blogs');
+        const response = await axios.get('https://blogapp-2-k07r.onrender.com/api/blogs');
         // Check if the response data is an array, if not, handle it accordingly
         if (Array.isArray(response.data)) {
           setPosts(response.data);
@@ -48,7 +48,7 @@ const AddNewPost = () => {
     setDeletingPost(post);
     // Add the delete logic here
     axios
-      .delete(`http://localhost:7700/api/blogs/${post._id}`)
+      .delete(`https://blogapp-2-k07r.onrender.com/api/blogs/${post._id}`)
       .then((res) => {
         console.log(res);
         setDeletingPost(null);
@@ -75,7 +75,7 @@ const AddNewPost = () => {
       let response;
       if (editingPost) {
         console.log('Updating post:', editingPost._id);
-        response = await axios.put(`http://localhost:7700/api/blogs/${editingPost._id}`, formData);
+        response = await axios.put(`https://blogapp-2-k07r.onrender.com/api/blogs/${editingPost._id}`, formData);
         console.log('Update response:', response.data);
         // Update the posts state with the updated post
         setPosts(
@@ -85,7 +85,7 @@ const AddNewPost = () => {
         setNewPost({ title: '', content: '', blogsnippet: '', photo: null });
       } else {
         // Create a new post
-        response = await axios.post('http://localhost:7700/api/blogs/', formData);
+        response = await axios.post('https://blogapp-2-k07r.onrender.com/api/blogs/', formData);
         console.log('Create response:', response.data);
         // Add the new post to the posts state
         setPosts([...posts, response.data]);
