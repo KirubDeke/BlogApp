@@ -165,7 +165,7 @@ const AddNewPost = () => {
            posts.map((post, index) => (
         <div key={index} className="post-item">
            {post.photo ? (
-             <img src={`http://localhost:7700/images/${post.photo}`} alt={post.title} />
+             <img src={`https://blogapp-2-k07r.onrender.com/images/${post.photo}`} alt={post.title} />
            ) : (
              <p>No image available</p>
         )}
