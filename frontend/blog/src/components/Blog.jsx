@@ -74,7 +74,7 @@ const Blog = () => {
               <div className="hero-blog-item">
                 <div className="hero-blog-content">
                   <img
-                    src={`http://localhost:7700/images/${blogs[0].photo}`}
+                    src={`https://blogapp-2-k07r.onrender.com/images/${blogs[0].photo}`}
                     alt={blogs[0].title}
                   />
                   <h2>{blogs[0].title}</h2>
@@ -94,7 +94,7 @@ const Blog = () => {
             {currentBlogs.map((blog) => (
               <div key={blog._id} className="blog-item">
                 {blog.photo ? (
-                  <img src={`http://localhost:7700/images/${blog.photo}`} alt={blog.title} />
+                  <img src={`https://blogapp-2-k07r.onrender.com/images/${blog.photo}`} alt={blog.title} />
                 ) : (
                   <p>No image available</p>
                 )}
