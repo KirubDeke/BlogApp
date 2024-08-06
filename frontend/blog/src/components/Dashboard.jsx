@@ -27,7 +27,7 @@ const Navbar = () => {
 
   const fetchUserData = async (userId) => {
     try {
-      const response = await fetch(`http://localhost:7700/api/UserNameAndRole/${userId}`);
+      const response = await fetch(`https://blogapp-2-k07r.onrender.com/api/UserNameAndRole/${userId}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
