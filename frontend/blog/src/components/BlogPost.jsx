@@ -15,7 +15,7 @@ const BlogPost = () => {
   const fetchBlogPost = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:7700/api/blogs/${blogId}`);
+      const response = await axios.get(`https://blogapp-2-k07r.onrender.com/api/blogs/${blogId}`);
       setBlogPost(response.data);
 
       // Calculate the number of days since the blog post was created
@@ -55,7 +55,7 @@ const BlogPost = () => {
     <div>
       <div className='blog-post'>
         {blogPost.photo ? (
-          <img src={`http://localhost:7700/images/${blogPost.photo}`} alt={blogPost.title} />
+          <img src={`https://blogapp-2-k07r.onrender.com/images/${blogPost.photo}`} alt={blogPost.title} />
         ) : (
           <p>No image available</p>
         )}
