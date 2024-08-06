@@ -15,7 +15,7 @@ const AdminManagement =()=>{
 
     const fetchUsers = async () =>{
         try{
-            const response = await fetch(`http://localhost:7700/api/usersList/`);
+            const response = await fetch(`https://blogapp-2-k07r.onrender.com/api/usersList/`);
             const data = await response.json();
             setUsers(data);
             console.log('success');
@@ -32,7 +32,7 @@ const AdminManagement =()=>{
         const confirmed = window.confirm('Are you sure you want to delete this user?');
         if (confirmed) {
             try {
-                await fetch(`http://localhost:7700/api/deleteUser/${userId}`, {
+                await fetch(`https://blogapp-2-k07r.onrender.com/api/deleteUser/${userId}`, {
                 method: 'DELETE',
                 });
                 setUsers(users.filter((user) => user._id !== userId));
@@ -53,7 +53,7 @@ const AdminManagement =()=>{
           return;
         }
     
-        const response = await fetch(`http://localhost:7700/api/updateUserRole/${userId}`, {
+        const response = await fetch(`https://blogapp-2-k07r.onrender.com/api/updateUserRole/${userId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
