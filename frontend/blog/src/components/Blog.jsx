@@ -19,7 +19,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('http://localhost:7700/api/blogs');
+        const response = await axios.get('https://blogapp-2-k07r.onrender.com/api/blogs');
         if (Array.isArray(response.data)) {
           const sortedBlogs = response.data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
           setBlogs(sortedBlogs);
