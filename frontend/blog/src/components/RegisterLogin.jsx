@@ -27,7 +27,7 @@ const RegisterLogin = ({ onClose }) => {
       if (isRegister) {
         // Registration logic
       } else {
-        const loginResponse = await fetch(`http://localhost:7700/api/login/`, {
+        const loginResponse = await fetch(`https://blogapp-2-k07r.onrender.com/api/login/`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
